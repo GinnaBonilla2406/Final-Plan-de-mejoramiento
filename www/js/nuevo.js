@@ -32,7 +32,7 @@ var acumuladorApp = angular.module( 'acumuladorApp', [] );
                             }
                         }
                     } //.-------------------------------fin lista--------------------------
-
+                    console.log('funcionndo');
                     var cad2 = sintomas;
                     console.log(cad2);
                 
