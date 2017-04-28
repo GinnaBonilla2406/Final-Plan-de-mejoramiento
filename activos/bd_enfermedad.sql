@@ -114,7 +114,10 @@ INSERT INTO `tb_resultados` (`id_resultados`, `id_signos`, `id_enfermedades`, `f
 --
 -- Estructura de tabla para la tabla `tb_signos_y_sintomas`
 --
-
+--/////////////////////////////////////////////////////////
+--/////////////////////////////
+--//////////////////////
+--/////////////////
 CREATE TABLE `tb_signos_y_sintomas` (
   `id_signos` int(11) NOT NULL,
   `signos_y_sintomas` varchar(200) NOT NULL
@@ -215,7 +218,7 @@ ALTER TABLE `tb_resultados`
   ADD CONSTRAINT `tb_resultados_ibfk_2` FOREIGN KEY (`id_signos`) REFERENCES `tb_signos_y_sintomas` (`id_signos`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Filtros para la tabla `tb_usuarios`
+-- Filtros para la tabla `tb_usuarios`a
 --
 ALTER TABLE `tb_usuarios`
   ADD CONSTRAINT `tb_usuarios_ibfk_1` FOREIGN KEY (`id_manual`) REFERENCES `tb_manuales` (`id_manual`) ON DELETE CASCADE ON UPDATE CASCADE,
